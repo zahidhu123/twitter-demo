@@ -1,5 +1,5 @@
 .form-control {
-    padding: 10px 25px;
+    padding: 10px 50px;
     border-radius: 50px;
     width: 90%;
 }
@@ -77,4 +77,28 @@
 
 .trending-wrapper:hover{
     background-color: gainsboro;
+}
+.search-area {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(0,-50%)
+}
+
+.scroll-area {
+    overflow-y: scroll;
+    height: calc(100vh - 145px);
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
 }
